@@ -25,5 +25,8 @@ public class FindUserScene : MonoBehaviour
         }
 
         Debug.Log("Loading UI표시하자.");
+        loadingUIs.ForEach(x => x.SetActive(true));
+        gameObject.SetActive(false);
     }
+    public List<GameObject> loadingUIs;
 }
